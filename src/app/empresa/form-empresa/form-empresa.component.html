@@ -1,0 +1,50 @@
+<div class="container d-flex justify-content-center">
+    <div class="card p-3 mt-5  wire color bg">
+        <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+            <div class="col-sm-12">
+                <label for="nome" class="form-label">Nome da empresa</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome da empresa" formControlName="nome">
+                <div class="invalid-feedback">
+                    Informe o nome da empresa!
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="cnpj" class="form-label">Cnpj</label>
+                <input type="text" class="form-control" id="cnpj" placeholder="Informe o Cnpj" formControlName="cnpj">
+                <div class="invalid-feedback">
+                    Informe o cnpj da empresa!
+                </div>
+            </div>
+                <div class="col-sm-6">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Informe o Endereço"
+                        formControlName="endereco">
+                    <div class="invalid-feedback">
+                        Informe o Endereço!
+                    </div>
+                </div>
+                    <div class="col-sm-12">
+                        <label for="socios" class="form-label">Sócios</label>
+                        <input type="text" class="form-control" id="socios" placeholder="Informe os sócios"
+                            formControlName="socios">
+                        <div class="invalid-feedback">
+                            Informe os sócios!
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="faturamento" class="form-label">Faturamento</label>
+                            <input type="text" class="form-control" id="faturamento" placeholder="Faturamento"
+                                formControlName="faturamento">
+                            <div class="invalid-feedback">
+                                Informe o faturamento!
+                            </div>
+                        </div>
+                    </div>
+                
+            
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn  me-2 colorbuttons" type="submit" (click)="Salvar()">Salvar</button>
+                <button class="btn colorbuttonc" type="submit" (click)="Cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

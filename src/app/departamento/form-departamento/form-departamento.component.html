@@ -1,0 +1,40 @@
+<div class="container d-flex justify-content-center">
+<div class="card p-3 mt-5  wire color bg">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do departamento</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome do departamento" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do departamento!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="localidade" class="form-label">Localização</label>
+            <input type="text" class="form-control" id="localidade" placeholder="Informe a localização" formControlName="localidade">
+            <div class="invalid-feedback">
+                Informe a localização!
+            </div>
+        </div>
+            <div class="col-sm-6">
+                <label for="descricaoAtividades" class="form-label">Descreva as atividades</label>
+                <input type="text" class="form-control" id="descricaoAtividades" placeholder="Descrição" formControlName="descricaoAtividades">
+                <div class="invalid-feedback">
+                    Informe o salario!
+                </div>
+            </div>
+                <div class="col-sm-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Informe o email" formControlName="email">
+                    <div class="invalid-feedback">
+                        Informe o email!
+                    </div>
+                    </div>
+                
+          
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn  me-2 colorbuttons" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn colorbuttonc" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>
+</div>

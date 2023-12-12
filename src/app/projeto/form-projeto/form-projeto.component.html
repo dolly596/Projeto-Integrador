@@ -1,0 +1,51 @@
+<div class="container d-flex justify-content-center ">
+    <div class="card p-3 mt-5  wire color bgimage bg">
+        <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+            <div class="col-sm-12">
+                <label for="nome" class="form-label">Nome do projeto</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome do projeto" formControlName="nome">
+                <div class="invalid-feedback">
+                    Informe o nome do projeto!
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="descricao" class="form-label">Descrição</label>
+                <input type="text" class="form-control" id="descricao" placeholder="Informe a descrição"
+                    formControlName="descricao">
+                <div class="invalid-feedback">
+                    Informe a descrição!
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="qtdeparticipantes" class="form-label">Quantidade de participantes</label>
+                <input type="text" class="form-control" id="qtdeparticipantes" placeholder="Informe a quantidade "
+                    formControlName="qtdeparticipantes">
+                <div class="invalid-feedback">
+                    Informe a quantidade de participantes!
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <label for="responsavel" class="form-label">Responsável</label>
+                <input type="text" class="form-control" id="responsavel" placeholder="Informe o responsável"
+                    formControlName="responsavel">
+                <div class="invalid-feedback">
+                    Informe o responsável!
+                </div>
+                <div class="col-sm-12">
+                    <label for="custo" class="form-label">Custo</label>
+                    <input type="text" class="form-control" id="custo" placeholder="custo do projeto"
+                        formControlName="custo">
+                    <div class="invalid-feedback">
+                        Informe o custo!
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 d-flex justify-content-end">
+                <button class="btn  me-2 colorbuttons" type="submit" (click)="Salvar()">Salvar</button>
+                <button class="btn colorbuttonc" type="submit" (click)="Cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

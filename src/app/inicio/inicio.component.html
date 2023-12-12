@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-center">
+    <div class="wrapper mt-5">
+        <form action="" class="form"  novalidate [formGroup]="form">
+            <h1 class="title">Início</h1>
+            <div class="inp">
+                <input type="text" name="" class="input" placeholder="Usuário" id="login" formControlName="login">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="password" name=""  class="input" placeholder="Senha" id="senha" formControlName="senha">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button class="submit"  (click)="entrar()" >Iniciar sessão </button>
+            <p class="footer">Não tem conta?<a href="" class="link"> Por favor, registre-se</a></p>
+        </form>
+
+        <div></div>
+        <div class="banner">
+            <h1 class="wel_text">BEM-VINDO</h1>
+            <P class="para">Obrigado por confiar na empresa! </P>
+        </div>
+    </div>  
+</div>

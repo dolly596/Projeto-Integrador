@@ -1,0 +1,39 @@
+
+<div class="card mt-5">
+    <div class="d-flex justify-content-between align-items-center p-0  colortable">
+        <h1 class="text-white espaco ">Projeto</h1>
+        <button class="btn btn-outline-light textbutton button me-3" [routerLink]="['novo']">Novo Projeto</button>
+    </div>
+    
+    <div class="card-body  ">
+        <table class="table table-hover  ">
+            <thead>
+                <tr>
+                    <th class="borda">#</th>
+                    <th class="borda">Nome</th>
+                    <th class="borda">Descrição</th>
+                    <th class="borda">Quantidade de Participantes</th>
+                    <th class="borda">Responsável</th>
+                    <th class="borda">Custo</th>
+                </tr>   
+            </thead>
+            <tbody class="">
+                <tr *ngFor="let projeto of projeto">
+                    <td>{{ projeto.id }}</td>
+                    <td>{{ projeto.nome }}</td>
+                    <td>{{ projeto.descricao }}</td>
+                    <td>{{ projeto.qtdeparticipantes }}</td>
+                    <td>{{ projeto.responsavel }}</td>
+                    <td>{{ projeto.custo}}</td>
+                    <td> 
+                        <span class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary  me-2" (click)="Editar(projeto.id)">Atualizar</button>
+                            <button type="button" class="btn btn-danger" (click)="Excluir(projeto.id)">Deletar</button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>  
+    

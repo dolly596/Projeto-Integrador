@@ -1,0 +1,33 @@
+.colortable {
+    background: linear-gradient(45deg,rgb(0, 0, 0), #f5f4f4);
+    border-radius: 3px;
+}
+.colorbutton{
+    background-color: white;
+}
+.textbutton{
+    font-weight: bold;      
+}
+.clienteimg{
+    display: flex;
+}
+.borda{
+    border: solid 3px black;
+    border-radius: 15px;
+
+    
+}
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+button{
+    width: 200px;
+    border-radius: 30px;
+    background-color: #8f9491;
+}
+
+.espaco{
+    margin: 10px;
+}
